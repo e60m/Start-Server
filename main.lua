@@ -15,15 +15,7 @@ AddEventHandler('onResourceStart', function(resource)
             print(_)
             ExecuteCommand(cmd)
             print("[Executed] " .. cmd)
-            if _ == 10 then
-                Wait(40000)
-            elseif _ == 19 then
-                Wait(40000)
-                elseif _ == 24 then
-                Wait(40000)
-            elseif _ == 27 then
-                Wait(40000)
-            end
+            Wait(1000)
         end
 
         print("\nAll commands have been executed.")
