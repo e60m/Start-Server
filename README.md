@@ -27,10 +27,10 @@ This script **automatically starts & ensures** all your server resources when th
 2. Add this line in your `server.cfg`:
 3.✅ Add permissions (optional but recommended):
 ```
-start VorteXStartServer
-add_ace resource.VorteXStartServer command.start allow
-add_ace resource.VorteXStartServer command.ensure allow
-add_ace resource.VorteXStartServer command.stop allow
+start Start-Server
+add_ace resource.Start-Server command.start allow
+add_ace resource.Start-Server command.ensure allow
+add_ace resource.Start-Server command.stop allow
 ```
 🎉 Done! The script will auto-run when the server starts.
 💻 How it works?
