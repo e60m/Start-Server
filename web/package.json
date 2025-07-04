@@ -1,0 +1,86 @@
+{
+  "name": "blackmarket-fd-laptop-app",
+  "version": "1.0.0",
+  "description": "Black Market application for FD Laptop system",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .js,.vue",
+    "format": "prettier --write ."
+  },
+  "keywords": [
+    "fivem",
+    "esx",
+    "blackmarket",
+    "fd-laptop",
+    "vue",
+    "bitcoin"
+  ],
+  "author": "BlackMarket Development Team",
+  "license": "MIT",
+  "dependencies": {
+    "vue": "^3.3.0",
+    "@vueuse/core": "^10.0.0",
+    "axios": "^1.4.0",
+    "lodash": "^4.17.21",
+    "date-fns": "^2.29.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.0",
+    "@vue/eslint-config-prettier": "^7.1.0",
+    "eslint": "^8.39.0",
+    "eslint-plugin-vue": "^9.11.0",
+    "prettier": "^2.8.8",
+    "vite": "^4.3.0",
+    "sass": "^1.62.0"
+  },
+  "fdLaptopApp": {
+    "name": "blackmarket",
+    "displayName": "Black Market",
+    "description": "Underground marketplace for illegal goods",
+    "version": "1.0.0",
+    "category": "illegal",
+    "icon": "fas fa-user-secret",
+    "color": "#ff0040",
+    "permissions": {
+      "requiresAccess": true,
+      "allowedJobs": [],
+      "blacklistedJobs": ["police", "ambulance", "mechanic"]
+    },
+    "window": {
+      "width": 1200,
+      "height": 800,
+      "minWidth": 800,
+      "minHeight": 600,
+      "resizable": true,
+      "maximizable": true
+    },
+    "features": [
+      "bitcoin-wallet",
+      "dynamic-pricing",
+      "transaction-history",
+      "inventory-management",
+      "market-analytics",
+      "real-time-updates"
+    ],
+    "requirements": {
+      "framework": "ESX",
+      "dependencies": [
+        "es_extended",
+        "oxmysql",
+        "fd_laptop"
+      ]
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/blackmarket/fd-laptop-app"
+  },
+  "bugs": {
+    "url": "https://github.com/blackmarket/fd-laptop-app/issues"
+  },
+  "homepage": "https://github.com/blackmarket/fd-laptop-app#readme"
+}
